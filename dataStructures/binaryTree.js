@@ -6,7 +6,7 @@ function Node(value){
 
 module.exports.Node = Node
 
-function RandomTree(length = 2, parent) {
+function RandomTree(length = 4, parent) {
     if(length > 0){
         if(!parent)
             parent = new Node(length * 10)

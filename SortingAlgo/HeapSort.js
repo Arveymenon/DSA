@@ -1,8 +1,6 @@
 var arr = [ 5, 12, 11, 13, 4, 6, 7 ];
 
 function heapify(arr, n, i) {
-    if(!n)
-        n = arr.length
     let largest = i,
         l = (2 * i) + 1,
         r = (2 * i) + 2
@@ -15,7 +13,7 @@ function heapify(arr, n, i) {
 
     if(largest != i){
         arr[i] = [arr[largest], arr[largest] = arr[i]][0]
-        heapify(arr, false, largest)
+        heapify(arr, n, largest)
     }
 }
 
